@@ -1,0 +1,1 @@
+pyinstaller --onefile --add-data "ffmpeg.exe;." --add-data "cookies.txt;." --name VideoDownloader --icon logo.ico --windowed video_downloader.py
