@@ -1,18 +1,48 @@
-# VideoDownloader
+# Video Downloader
 
-===============================
-This application downloads videos from YouTube and Facebook.
+## Overview
+This application allows users to download videos from YouTube and Facebook with a simple and intuitive interface.
 
-For age-restricted or private YouTube videos:
-1. Log in to YouTube in your browser (Chrome, Brave, or Edge).
-2. Install a browser extension like "Get cookies.txt LOCALLY" (Chrome/Brave/Edge) or "cookies.txt" (Firefox).
-3. Export cookies to a file named cookies.txt.
-4. Place cookies.txt in C:\Program Files\VideoDownloader.
-5. Restart the application and try the restricted URL again.
+## Requirements
+- Python (for initial setup or alternative cookie generation)
+- yt-dlp (optional, for cookie generation)
 
-Alternatively, use yt-dlp to generate cookies.txt:
-- Install Python and yt-dlp (pip install yt-dlp).
-- Run: yt-dlp --cookies-from-browser chrome > cookies.txt
-- Move cookies.txt to C:\Program Files\VideoDownloader.
+## Usage
+### Downloading Videos
+1. Launch the Video Downloader application.
+2. Enter the URL of the video from YouTube or Facebook.
+3. Select the platform (YouTube or Facebook) from the dropdown menu.
+4. Click "Preview" to verify the video details.
+5. Choose the output folder and click "Download Selected" to start the download.
 
-Contact: israkahmed7@gmail.com# VideoDownloader
+### Handling Age-Restricted or Private YouTube Videos
+For videos that require authentication (e.g., age-restricted or private content), follow these steps:
+
+1. **Log in to YouTube**:
+   - Use a supported browser (e.g., Chrome, Brave, or Edge).
+
+2. **Export Cookies**:
+   - **Option 1: Browser Extension**
+     - Install a browser extension such as "Get cookies.txt LOCALLY" (for Chrome/Brave/Edge) or "cookies.txt" (for Firefox).
+     - Export the cookies to a file named `cookies.txt`.
+   - **Option 2: Using yt-dlp**
+     - Ensure Python and yt-dlp are installed (`pip install yt-dlp`).
+     - Run the following command in your terminal or command prompt:
+       ```bash
+       yt-dlp --cookies-from-browser chrome > cookies.txt
+       ```
+     - This generates a `cookies.txt` file from your browser's cookies.
+
+3. **Place the Cookies File**:
+   - Move the `cookies.txt` file to `C:\Program Files\VideoDownloader`.
+
+4. **Restart and Retry**:
+   - Restart the Video Downloader application.
+   - Enter the restricted URL and attempt the download again.
+
+## Contact
+For support or inquiries, please contact:
+- Email: [israkahmed7@gmail.com](mailto:israkahmed7@gmail.com)
+
+## License
+[Add license information here if applicable, e.g., MIT, GPL, etc.]
