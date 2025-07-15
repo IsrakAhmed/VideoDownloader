@@ -40,7 +40,10 @@ For videos that require authentication (e.g., age-restricted or private content)
    - Restart the Video Downloader application.
    - Enter the restricted URL and attempt the download again.
 
+## Installation
+The installer for the Video Downloader application can be downloaded from the following link:
+- [Installer Download](https://drive.google.com/drive/folders/1zXffTHsDPrrNeUZYrMulv4K58bhGaXhA?usp=sharing)
+
 ## Contact
 For support or inquiries, please contact:
 - Email: [israkahmed7@gmail.com](mailto:israkahmed7@gmail.com)
-
