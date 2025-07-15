@@ -44,5 +44,3 @@ For videos that require authentication (e.g., age-restricted or private content)
 For support or inquiries, please contact:
 - Email: [israkahmed7@gmail.com](mailto:israkahmed7@gmail.com)
 
-## License
-[Add license information here if applicable, e.g., MIT, GPL, etc.]
