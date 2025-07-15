@@ -43,3 +43,15 @@ Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: de
 [Run]
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
 Filename: "cmd.exe"; Parameters: "/c start https://github.com/IsrakAhmed/VideoDownloader/blob/main/README.md"; Description: "Read Info"; Flags: shellexec nowait postinstall
+
+[Code]
+procedure CurStepChanged(CurStep: TSetupStep);
+var
+  DefaultPath: string;
+begin
+  if CurStep = ssPostInstall then
+  begin
+    DefaultPath := ExpandConstant('{userdocs}') + '\Downloads\VideoDownloader';
+    SaveStringToFile(ExpandConstant('{app}\default_config.txt'), DefaultPath, False);
+  end;
+end;
